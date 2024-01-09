@@ -11,6 +11,7 @@
 		104984702A9926F60049D316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1049846F2A9926F60049D316 /* ContentView.swift */; };
 		104984722A9926F70049D316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104984712A9926F70049D316 /* Assets.xcassets */; };
 		104984752A9926F70049D316 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104984742A9926F70049D316 /* Preview Assets.xcassets */; };
+		10A7A6872A9BC1F200C1FA7A /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 10A7A6862A9BC1F200C1FA7A /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A7A6872A9BC1F200C1FA7A /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = JokerGPT;
+			packageProductDependencies = (
+				10A7A6862A9BC1F200C1FA7A /* OpenAISwift */,
+			);
 			productName = JokerGPT;
 			productReference = 1049846A2A9926F60049D316 /* JokerGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 104984612A9926F60049D316;
+			packageReferences = (
+				10A7A6852A9BC1F200C1FA7A /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 1049846B2A9926F60049D316 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10A7A6852A9BC1F200C1FA7A /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10A7A6862A9BC1F200C1FA7A /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10A7A6852A9BC1F200C1FA7A /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 104984622A9926F60049D316 /* Project object */;
 }
