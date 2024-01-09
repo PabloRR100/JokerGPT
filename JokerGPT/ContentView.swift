@@ -16,7 +16,7 @@ import OpenAISwift
 //    private var client: OpenAISwift?
 //    
 //    func setup() {
-//        let key = "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"
+//        let key = "*****"
 //        client = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: key))
 //    }
 //    
@@ -42,8 +42,8 @@ import OpenAISwift
 
 struct ContentView: View {
     
-    let key = "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"
-    let client = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: "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"))
+    let key = "*****"
+    let client = OpenAISwift(config: OpenAISwift.Config.makeDefaultOpenAI(apiKey: "*****"))
     
     @State var text = "Cuentame un chiste"
     @State var joke = ""
